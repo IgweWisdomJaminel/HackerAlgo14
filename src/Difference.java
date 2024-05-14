@@ -52,6 +52,17 @@ public class Difference {
         this.arrayDiffrence=arrayDiffrence;
 
     }
+    public static void evenNumbers(int n){
+
+        if(n%2==0){
+            System.out.println("even");
+        }else{
+            System.out.println("this number is odd");
+        }
+
+
+
+    }
 
 
     public static void main(String[] args) {
@@ -63,7 +74,7 @@ public class Difference {
         }
         Difference difference = new Difference(array);
         difference.computerDifference();
-
-
+        int checkEvenOdd=sc.nextInt();
+        evenNumbers(checkEvenOdd);
     }
 }
